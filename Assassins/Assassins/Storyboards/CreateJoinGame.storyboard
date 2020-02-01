@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kbk-83-CNi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -14,13 +14,53 @@
                     <view key="view" contentMode="scaleToFill" id="GFB-0g-f79">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muL-Q2-Kt3">
+                                <rect key="frame" x="0.0" y="213" width="414" height="434"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4sR-JR-5aa">
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="434"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nxb-24-B1N">
+                                                <rect key="frame" x="0.0" y="0.0" width="213" height="368"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV6-nI-SRm">
+                                                <rect key="frame" x="0.0" y="368" width="213" height="66"/>
+                                                <state key="normal" title="Create Game"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VyD-ng-8be">
+                                        <rect key="frame" x="213" y="0.0" width="201" height="434"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wtS-h5-Clk">
+                                                <rect key="frame" x="0.0" y="0.0" width="201" height="368"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UM-h3-zVc">
+                                                <rect key="frame" x="0.0" y="368" width="201" height="66"/>
+                                                <state key="normal" title="Join Game"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VyD-ng-8be" firstAttribute="leading" secondItem="muL-Q2-Kt3" secondAttribute="leading" constant="213" id="wXQ-XM-kBj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="muL-Q2-Kt3" firstAttribute="leading" secondItem="sfb-vk-616" secondAttribute="leading" id="7IL-dk-iF8"/>
+                            <constraint firstItem="sfb-vk-616" firstAttribute="bottom" secondItem="muL-Q2-Kt3" secondAttribute="bottom" constant="215" id="C2b-gg-chG"/>
+                            <constraint firstItem="muL-Q2-Kt3" firstAttribute="trailing" secondItem="sfb-vk-616" secondAttribute="trailing" id="C4p-LD-chh"/>
+                            <constraint firstItem="muL-Q2-Kt3" firstAttribute="top" secondItem="sfb-vk-616" secondAttribute="top" constant="169" id="UbI-c2-7JN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sfb-vk-616"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wy-3H-Yr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="172"/>
+            <point key="canvasLocation" x="595.6521739130435" y="217.63392857142856"/>
         </scene>
         <!--CreateVC-->
         <scene sceneID="qPz-wn-bO9">
