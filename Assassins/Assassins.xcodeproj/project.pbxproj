@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113423E6260100C9EADB /* LoginViewController.swift */; };
+		D46D113723E6529700C9EADB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113623E6529700C9EADB /* RegisterViewController.swift */; };
 		E31665F14B440DED46D64F79 /* Pods_Assassins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308AAF46FF3DC79D3C1045DD /* Pods_Assassins.framework */; };
 		EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2FAC23E57652008F2015 /* AppDelegate.swift */; };
 		EB2F2FAF23E57652008F2015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2FAE23E57652008F2015 /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 		308AAF46FF3DC79D3C1045DD /* Pods_Assassins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assassins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5211B53837F1AEABB0A3BF01 /* Pods-Assassins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assassins.release.xcconfig"; path = "Target Support Files/Pods-Assassins/Pods-Assassins.release.xcconfig"; sourceTree = "<group>"; };
 		D46D113423E6260100C9EADB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D46D113623E6529700C9EADB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EB2F2FA923E57652008F2015 /* Assassins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assassins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2F2FAC23E57652008F2015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2F2FAE23E57652008F2015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */,
+
 				EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */,
 				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
 				EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */,
