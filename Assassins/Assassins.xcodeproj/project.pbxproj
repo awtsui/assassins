@@ -118,6 +118,7 @@
 			children = (
 				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 				EB2F2FB023E57652008F2015 /* MainViewController.swift */,
+				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
