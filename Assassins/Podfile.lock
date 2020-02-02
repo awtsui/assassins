@@ -79,6 +79,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
+  - Firebase/Core
 
 SPEC REPOS:
   trunk:
@@ -113,6 +114,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 254e1e21c2b2a5bb41254ffe0104b961fd7164c0
+PODFILE CHECKSUM: e2029f6b4e386b928d28f0d847e2849c9d5f5307
 
 COCOAPODS: 1.8.4

@@ -8,5 +8,6 @@ target 'Assassins' do
   # Pods for Assassins
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Core'
 
 end
