@@ -20,6 +20,7 @@
 		EB8CF06523E6220F00992A21 /* CreateJoinGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06423E6220F00992A21 /* CreateJoinGame.storyboard */; };
 		EB8CF06723E622DE00992A21 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06623E622DE00992A21 /* Auth.storyboard */; };
 		EB8CF06923E6231B00992A21 /* PlayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06823E6231B00992A21 /* PlayerGame.storyboard */; };
+		EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8CF07323E6522E00992A21 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EB8CF06423E6220F00992A21 /* CreateJoinGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateJoinGame.storyboard; sourceTree = "<group>"; };
 		EB8CF06623E622DE00992A21 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		EB8CF06823E6231B00992A21 /* PlayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerGame.storyboard; sourceTree = "<group>"; };
+		EB8CF07323E6522E00992A21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 			children = (
 				EB2F2FB023E57652008F2015 /* MainViewController.swift */,
 				D46D113423E6260100C9EADB /* LoginViewController.swift */,
-				D46D113623E6529700C9EADB /* RegisterViewController.swift */,
+				EB8CF07323E6522E00992A21 /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -245,7 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */,
-				D46D113723E6529700C9EADB /* RegisterViewController.swift in Sources */,
+
+				EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */,
 				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
 				EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */,
 				EB2F2FAF23E57652008F2015 /* SceneDelegate.swift in Sources */,
