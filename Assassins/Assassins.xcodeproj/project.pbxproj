@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113423E6260100C9EADB /* LoginViewController.swift */; };
-		D46D113723E6529700C9EADB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113623E6529700C9EADB /* RegisterViewController.swift */; };
 		E31665F14B440DED46D64F79 /* Pods_Assassins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308AAF46FF3DC79D3C1045DD /* Pods_Assassins.framework */; };
 		EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2FAC23E57652008F2015 /* AppDelegate.swift */; };
 		EB2F2FAF23E57652008F2015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2FAE23E57652008F2015 /* SceneDelegate.swift */; };
@@ -16,11 +15,13 @@
 		EB2F2FB423E57652008F2015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2F2FB223E57652008F2015 /* Main.storyboard */; };
 		EB2F2FB623E57654008F2015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2F2FB523E57654008F2015 /* Assets.xcassets */; };
 		EB2F2FB923E57654008F2015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2F2FB723E57654008F2015 /* LaunchScreen.storyboard */; };
+		EB4CED5323E6852D003DDF9A /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CED5223E6852D003DDF9A /* FirebaseAuthManager.swift */; };
 		EB7E595F23E578C600A4D235 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7E595E23E578C600A4D235 /* GoogleService-Info.plist */; };
 		EB8CF06523E6220F00992A21 /* CreateJoinGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06423E6220F00992A21 /* CreateJoinGame.storyboard */; };
 		EB8CF06723E622DE00992A21 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06623E622DE00992A21 /* Auth.storyboard */; };
 		EB8CF06923E6231B00992A21 /* PlayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06823E6231B00992A21 /* PlayerGame.storyboard */; };
 		EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8CF07323E6522E00992A21 /* RegisterViewController.swift */; };
+		EB913AB723E69C8C009610DD /* CreateJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB913AB623E69C8C009610DD /* CreateJoinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,6 @@
 		308AAF46FF3DC79D3C1045DD /* Pods_Assassins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assassins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5211B53837F1AEABB0A3BF01 /* Pods-Assassins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assassins.release.xcconfig"; path = "Target Support Files/Pods-Assassins/Pods-Assassins.release.xcconfig"; sourceTree = "<group>"; };
 		D46D113423E6260100C9EADB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D46D113623E6529700C9EADB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EB2F2FA923E57652008F2015 /* Assassins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assassins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2F2FAC23E57652008F2015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2F2FAE23E57652008F2015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +37,13 @@
 		EB2F2FB523E57654008F2015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2F2FB823E57654008F2015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2F2FBA23E57654008F2015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4CED5223E6852D003DDF9A /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		EB7E595E23E578C600A4D235 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB8CF06423E6220F00992A21 /* CreateJoinGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateJoinGame.storyboard; sourceTree = "<group>"; };
 		EB8CF06623E622DE00992A21 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		EB8CF06823E6231B00992A21 /* PlayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerGame.storyboard; sourceTree = "<group>"; };
 		EB8CF07323E6522E00992A21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EB913AB623E69C8C009610DD /* CreateJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJoinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				EB2F2FB523E57654008F2015 /* Assets.xcassets */,
 				EB2F2FBA23E57654008F2015 /* Info.plist */,
 				EB7E595E23E578C600A4D235 /* GoogleService-Info.plist */,
+				EB4CED5223E6852D003DDF9A /* FirebaseAuthManager.swift */,
 			);
 			path = Assassins;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 				EB2F2FB023E57652008F2015 /* MainViewController.swift */,
 				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 				EB8CF07323E6522E00992A21 /* RegisterViewController.swift */,
+				EB913AB623E69C8C009610DD /* CreateJoinViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -246,9 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4CED5323E6852D003DDF9A /* FirebaseAuthManager.swift in Sources */,
 				D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */,
-
 				EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */,
+				EB913AB723E69C8C009610DD /* CreateJoinViewController.swift in Sources */,
 				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
 				EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */,
 				EB2F2FAF23E57652008F2015 /* SceneDelegate.swift in Sources */,
