@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
 
 class LoginViewController : UIViewController {
     
@@ -34,11 +35,9 @@ class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+
     
 
         
@@ -47,16 +46,11 @@ class LoginViewController : UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var textScrollView: UIScrollView!
-        
-        
-    func loginOnPress(_ sender: UIButton) {
-            // Take email and pw text fields, check against
-            // a database
-            // If in database, segue to Create/join game Storyboard
-            // else dont segue and error msg
-    
+    @IBAction func login_Tapped(_ sender: Any) {
+        ///implement login
     }
-
+    
+        
 }
 
 extension LoginViewController: UITextFieldDelegate {
@@ -65,4 +59,5 @@ extension LoginViewController: UITextFieldDelegate {
         return true
 
     }
+
 }

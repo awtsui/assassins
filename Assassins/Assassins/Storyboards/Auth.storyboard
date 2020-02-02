@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KFJ-JC-gbd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KFJ-JC-gbd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,6 +33,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="login_Tapped:" destination="KFJ-JC-gbd" eventType="touchUpInside" id="exK-JK-Q9T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saM-6U-bhd">
                                 <rect key="frame" x="157" y="724" width="100" height="34"/>
@@ -65,15 +68,27 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1n-fr-5Xj">
+                                        <rect key="frame" x="57" y="206" width="300" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="hGW-SY-guo"/>
+                                            <constraint firstAttribute="width" constant="300" id="xh2-We-vqP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="vZh-np-dX4" secondAttribute="bottom" constant="-264" id="2aI-kK-TeQ"/>
+                                    <constraint firstItem="vZh-np-dX4" firstAttribute="top" secondItem="k1n-fr-5Xj" secondAttribute="bottom" constant="10" id="4HZ-qI-ejD"/>
                                     <constraint firstItem="vZh-np-dX4" firstAttribute="top" secondItem="9qq-7T-7GT" secondAttribute="top" constant="250" id="Akx-4r-xD3"/>
                                     <constraint firstItem="vZh-np-dX4" firstAttribute="centerX" secondItem="9qq-7T-7GT" secondAttribute="centerX" id="K4E-4C-CAe"/>
                                     <constraint firstItem="bLW-is-083" firstAttribute="top" secondItem="vZh-np-dX4" secondAttribute="bottom" constant="20" id="Yr3-tX-ZcR"/>
                                     <constraint firstItem="vZh-np-dX4" firstAttribute="leading" secondItem="bLW-is-083" secondAttribute="leading" id="cp4-Vz-mkV"/>
                                     <constraint firstItem="vZh-np-dX4" firstAttribute="trailing" secondItem="bLW-is-083" secondAttribute="trailing" id="nro-eb-mLQ"/>
                                     <constraint firstAttribute="trailing" secondItem="vZh-np-dX4" secondAttribute="trailing" constant="57" id="p9O-KT-Uel"/>
+                                    <constraint firstItem="k1n-fr-5Xj" firstAttribute="centerX" secondItem="9qq-7T-7GT" secondAttribute="centerX" id="vIb-V7-gc5"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="1aH-68-1Ut"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="uLA-kQ-5Bv"/>
@@ -104,6 +119,14 @@
             </objects>
             <point key="canvasLocation" x="153.62318840579712" y="75.669642857142847"/>
         </scene>
+        <!--CreateJoinGame-->
+        <scene sceneID="HKR-L4-sE3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateJoinGame" id="Qcx-JK-o6t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaI-eE-eC9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="3"/>
+        </scene>
         <!--RegisterVC-->
         <scene sceneID="SqV-vU-1BN">
             <objects>
@@ -123,6 +146,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="register_user:" destination="2hw-tY-PB5" eventType="touchUpInside" id="5eR-6b-OGW"/>
                                     <segue destination="KFJ-JC-gbd" kind="presentation" id="Cdn-WP-Wdg"/>
                                 </connections>
                             </button>
@@ -138,11 +162,17 @@
                                         <rect key="frame" x="0.0" y="44" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="_email:" destination="2hw-tY-PB5" eventType="editingDidEnd" id="wH9-cb-sAo"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Zo-FMc">
                                         <rect key="frame" x="0.0" y="88" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="_password:" destination="2hw-tY-PB5" eventType="editingDidEnd" id="atw-zD-iiJ"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -160,6 +190,12 @@
                         <viewLayoutGuide key="safeArea" id="KUR-PR-9Df"/>
                     </view>
                     <navigationItem key="navigationItem" id="KQg-yW-sGe"/>
+                    <connections>
+                        <outlet property="_username" destination="QAl-GB-MLH" id="vdu-wk-a6u"/>
+                        <outlet property="emailTextField" destination="DB7-gz-jyo" id="KKe-6P-hpB"/>
+                        <outlet property="passwordTextField" destination="5mO-Zo-FMc" id="k6h-eD-yGF"/>
+                        <outlet property="usernameTextField" destination="0b1-vj-klR" id="F2S-CR-vGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VET-xg-Hq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
