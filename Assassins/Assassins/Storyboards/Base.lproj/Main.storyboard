@@ -15,31 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assassinlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-Qn-Hie">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clearassassinlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-Qn-Hie">
                                 <rect key="frame" x="-37" y="124" width="488" height="500"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="488" id="4Ge-b0-Mis"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9A-nT-ClK">
-                                <rect key="frame" x="159" y="632" width="96" height="46"/>
+                                <rect key="frame" x="157" y="612" width="100" height="65"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="gSf-lH-Lzr"/>
-                                    <constraint firstAttribute="height" constant="46" id="pnk-QA-W4B"/>
+                                    <constraint firstAttribute="height" constant="65" id="Wl3-3Y-8cs"/>
+                                    <constraint firstAttribute="width" constant="100" id="oOq-VH-ERG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="erF-s1-f7E" kind="show" id="U5h-rC-A3x"/>
+                                    <segue destination="erF-s1-f7E" kind="presentation" modalPresentationStyle="fullScreen" id="U5h-rC-A3x"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P9A-nT-ClK" secondAttribute="bottom" constant="184" id="5f0-xg-Cof"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P9A-nT-ClK" secondAttribute="bottom" constant="185" id="5f0-xg-Cof"/>
                             <constraint firstItem="Mga-Qn-Hie" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-37" id="BFR-GJ-INZ"/>
                             <constraint firstAttribute="trailing" secondItem="Mga-Qn-Hie" secondAttribute="trailing" constant="-37" id="CHJ-Nv-SdH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P9A-nT-ClK" secondAttribute="trailing" constant="159" id="Jcb-Pw-Pr7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P9A-nT-ClK" secondAttribute="trailing" constant="157" id="Jcb-Pw-Pr7"/>
                             <constraint firstItem="Mga-Qn-Hie" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="vcV-s6-Yaj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -61,6 +64,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="assassinlogo" width="500" height="500"/>
+        <image name="clearassassinlogo" width="500" height="500"/>
     </resources>
 </document>

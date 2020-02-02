@@ -94,7 +94,6 @@
 				EB8CF06323E621C100992A21 /* Storyboards */,
 				EB2F2FAC23E57652008F2015 /* AppDelegate.swift */,
 				EB2F2FAE23E57652008F2015 /* SceneDelegate.swift */,
-				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 				EB2F2FB523E57654008F2015 /* Assets.xcassets */,
 				EB2F2FBA23E57654008F2015 /* Info.plist */,
 				EB7E595E23E578C600A4D235 /* GoogleService-Info.plist */,
@@ -117,6 +116,7 @@
 		EB8CF06A23E626C000992A21 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 				EB2F2FB023E57652008F2015 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
