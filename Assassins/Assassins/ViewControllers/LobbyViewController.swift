@@ -7,6 +7,7 @@
 //
 
 import UIKit
+<<<<<<< Updated upstream
 import CoreLocation
 
 class LobbyViewController: UIViewController, CLLocationManagerDelegate {
@@ -35,3 +36,16 @@ class LobbyViewController: UIViewController, CLLocationManagerDelegate {
 
 }
 
+=======
+
+class LobbyViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    @IBAction func GoToGame(_ sender: Any) {
+    }
+    
+}
+>>>>>>> Stashed changes

@@ -42,7 +42,11 @@
                 <viewController title="GameVC" id="5LY-eY-ejm" customClass="GameViewController" customModule="Assassins" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WNU-56-G5U">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+>>>>>>> Stashed changes
 =======
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
 >>>>>>> Stashed changes

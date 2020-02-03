@@ -136,6 +136,9 @@
 				EB913AB623E69C8C009610DD /* CreateJoinViewController.swift */,
 				D43CB29623E6A9620043AF9E /* GameViewController.swift */,
 				D43CB29823E6AC100043AF9E /* LobbyViewController.swift */,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			);
 			path = ViewControllers;
@@ -289,6 +292,9 @@
 				D43CB29723E6A9620043AF9E /* GameViewController.swift in Sources */,
 				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
 				D43CB29923E6AC100043AF9E /* LobbyViewController.swift in Sources */,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */,
 				EB2F2FAF23E57652008F2015 /* SceneDelegate.swift in Sources */,
