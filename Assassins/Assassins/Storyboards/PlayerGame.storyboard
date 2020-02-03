@@ -14,7 +14,21 @@
                     <view key="view" contentMode="scaleToFill" id="0CE-gd-nC1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb2-A2-dE9">
+                                <rect key="frame" x="119" y="225" width="82" height="30"/>
+                                <state key="normal" title="Go to Game"/>
+                                <connections>
+                                    <action selector="GoToGame:" destination="y5h-Ji-1cm" eventType="touchUpInside" id="tNC-Ol-h7Z"/>
+                                    <segue destination="5LY-eY-ejm" kind="presentation" identifier="GoToGame" id="0ym-2V-3Kw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jb2-A2-dE9" firstAttribute="centerX" secondItem="0CE-gd-nC1" secondAttribute="centerX" id="9eS-yq-vf3"/>
+                            <constraint firstItem="Jb2-A2-dE9" firstAttribute="centerY" secondItem="0CE-gd-nC1" secondAttribute="centerY" id="Zg4-zS-Z5h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="44G-yO-UOb"/>
                     </view>
                 </viewController>
@@ -27,15 +41,33 @@
             <objects>
                 <viewController title="GameVC" id="5LY-eY-ejm" customClass="GameViewController" customModule="Assassins" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WNU-56-G5U">
+<<<<<<< Updated upstream
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+>>>>>>> Stashed changes
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sTe-3x-NrF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sTe-3x-NrF" firstAttribute="leading" secondItem="KmT-9Z-6m2" secondAttribute="leading" id="5pd-3m-iFl"/>
+                            <constraint firstItem="sTe-3x-NrF" firstAttribute="bottom" secondItem="KmT-9Z-6m2" secondAttribute="bottom" id="brZ-SM-iYt"/>
+                            <constraint firstItem="sTe-3x-NrF" firstAttribute="trailing" secondItem="KmT-9Z-6m2" secondAttribute="trailing" id="jef-JM-JXz"/>
+                            <constraint firstItem="sTe-3x-NrF" firstAttribute="top" secondItem="KmT-9Z-6m2" secondAttribute="top" id="t1I-E4-8D2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KmT-9Z-6m2"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="sTe-3x-NrF" id="8Hf-au-CDd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edI-fu-lBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="775"/>
+            <point key="canvasLocation" x="136.875" y="775"/>
         </scene>
     </scenes>
 </document>

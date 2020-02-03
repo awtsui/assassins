@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43CB29723E6A9620043AF9E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43CB29623E6A9620043AF9E /* GameViewController.swift */; };
+		D43CB29923E6AC100043AF9E /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43CB29823E6AC100043AF9E /* LobbyViewController.swift */; };
 		D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113423E6260100C9EADB /* LoginViewController.swift */; };
 		D46D113923E6928800C9EADB /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113823E6928800C9EADB /* LobbyViewController.swift */; };
 		D46D113B23E69EB600C9EADB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D113A23E69EB600C9EADB /* GameViewController.swift */; };
@@ -28,6 +30,8 @@
 		07E6C71A107BEC88CEE04F6B /* Pods-Assassins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assassins.debug.xcconfig"; path = "Target Support Files/Pods-Assassins/Pods-Assassins.debug.xcconfig"; sourceTree = "<group>"; };
 		308AAF46FF3DC79D3C1045DD /* Pods_Assassins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assassins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5211B53837F1AEABB0A3BF01 /* Pods-Assassins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assassins.release.xcconfig"; path = "Target Support Files/Pods-Assassins/Pods-Assassins.release.xcconfig"; sourceTree = "<group>"; };
+		D43CB29623E6A9620043AF9E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D43CB29823E6AC100043AF9E /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		D46D113423E6260100C9EADB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D46D113823E6928800C9EADB /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		D46D113A23E69EB600C9EADB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -125,8 +129,14 @@
 				EB2F2FB023E57652008F2015 /* MainViewController.swift */,
 				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 				EB8CF07323E6522E00992A21 /* RegisterViewController.swift */,
+<<<<<<< Updated upstream
 				D46D113823E6928800C9EADB /* LobbyViewController.swift */,
 				D46D113A23E69EB600C9EADB /* GameViewController.swift */,
+=======
+				EB913AB623E69C8C009610DD /* CreateJoinViewController.swift */,
+				D43CB29623E6A9620043AF9E /* GameViewController.swift */,
+				D43CB29823E6AC100043AF9E /* LobbyViewController.swift */,
+>>>>>>> Stashed changes
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,8 +281,15 @@
 				D46D113B23E69EB600C9EADB /* GameViewController.swift in Sources */,
 				D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */,
 				EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */,
+<<<<<<< Updated upstream
 				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
 				D46D113923E6928800C9EADB /* LobbyViewController.swift in Sources */,
+=======
+				EB913AB723E69C8C009610DD /* CreateJoinViewController.swift in Sources */,
+				D43CB29723E6A9620043AF9E /* GameViewController.swift in Sources */,
+				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
+				D43CB29923E6AC100043AF9E /* LobbyViewController.swift in Sources */,
+>>>>>>> Stashed changes
 				EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */,
 				EB2F2FAF23E57652008F2015 /* SceneDelegate.swift in Sources */,
 			);
