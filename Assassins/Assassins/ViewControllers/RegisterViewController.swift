@@ -13,7 +13,6 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +21,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func onClickRegisterButton(_ sender: UIButton) {
-        if let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text{
+        if let email = emailTextField.text, let password = passwordTextField.text{
             let signUpManager = FirebaseAuthManager()
             signUpManager.createUser(email: email, password: password) {[weak self] (success) in
                 guard let `self` = self else { return }

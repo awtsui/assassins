@@ -117,7 +117,7 @@
         <!--CreateVC-->
         <scene sceneID="qPz-wn-bO9">
             <objects>
-                <viewController title="CreateVC" id="C33-48-vs7" sceneMemberID="viewController">
+                <viewController title="CreateVC" id="C33-48-vs7" customClass="CreateViewController" customModule="Assassins" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mx5-oU-jIA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,9 +129,17 @@
                                     <constraint firstAttribute="height" constant="128" id="vxp-8v-8QV"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsU-2P-Yza">
-                                <rect key="frame" x="0.0" y="171" width="414" height="500"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsU-2P-Yza">
+                                <rect key="frame" x="0.0" y="198" width="414" height="500"/>
                                 <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AQi-cf-uCV">
+                                        <rect key="frame" x="32" y="90" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Nsm-v8-yph"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Game Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSb-TF-Oql">
                                         <rect key="frame" x="30.5" y="154" width="350" height="34"/>
                                         <constraints>
@@ -160,6 +168,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="createOnPress:" destination="C33-48-vs7" eventType="touchUpInside" id="S7R-aT-bCY"/>
                                             <segue destination="f0x-4q-ybs" kind="presentation" modalPresentationStyle="fullScreen" id="6nS-mH-80h"/>
                                         </connections>
                                     </button>
@@ -168,10 +177,12 @@
                                     <constraint firstItem="VSb-TF-Oql" firstAttribute="top" secondItem="Lsj-JT-TtQ" secondAttribute="top" constant="154" id="4Q1-oE-hvg"/>
                                     <constraint firstItem="lDB-xb-ZaL" firstAttribute="top" secondItem="ajl-Ep-Z5B" secondAttribute="bottom" constant="37.999999999999972" id="8g5-8C-Bfd"/>
                                     <constraint firstItem="lDB-xb-ZaL" firstAttribute="centerX" secondItem="ajl-Ep-Z5B" secondAttribute="centerX" id="GxR-tn-LBf"/>
+                                    <constraint firstItem="AQi-cf-uCV" firstAttribute="top" secondItem="Lsj-JT-TtQ" secondAttribute="top" constant="90" id="OPE-j0-k42"/>
                                     <constraint firstItem="lDB-xb-ZaL" firstAttribute="leading" secondItem="Lsj-JT-TtQ" secondAttribute="leading" constant="80.532423208010982" id="UDl-bh-5rW"/>
                                     <constraint firstAttribute="bottom" secondItem="lDB-xb-ZaL" secondAttribute="bottom" constant="148.99999999999994" id="YmL-Bh-8py"/>
                                     <constraint firstItem="Lsj-JT-TtQ" firstAttribute="bottom" secondItem="lDB-xb-ZaL" secondAttribute="bottom" constant="148.99999999999994" id="bbb-53-Brb"/>
                                     <constraint firstAttribute="trailing" secondItem="lDB-xb-ZaL" secondAttribute="trailing" constant="83.467576791989018" id="jgt-va-oIk"/>
+                                    <constraint firstItem="AQi-cf-uCV" firstAttribute="centerX" secondItem="UsU-2P-Yza" secondAttribute="centerX" id="n9s-g4-3sw"/>
                                     <constraint firstItem="lDB-xb-ZaL" firstAttribute="centerX" secondItem="VSb-TF-Oql" secondAttribute="centerX" id="zDB-ux-juV"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="StD-zB-Ut7"/>
@@ -190,6 +201,11 @@
                         <viewLayoutGuide key="safeArea" id="Hzh-Xg-ub7"/>
                     </view>
                     <navigationItem key="navigationItem" id="VKO-dd-cJr"/>
+                    <connections>
+                        <outlet property="gameIDTextField" destination="ajl-Ep-Z5B" id="zFC-Jh-mq4"/>
+                        <outlet property="gameNameTextField" destination="VSb-TF-Oql" id="akM-dy-g20"/>
+                        <outlet property="usernameTextField" destination="AQi-cf-uCV" id="iyt-Ff-DYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc1-Kn-tb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +214,7 @@
         <!--JoinVC-->
         <scene sceneID="qPg-i7-UST">
             <objects>
-                <viewController title="JoinVC" id="xF0-qp-wz5" sceneMemberID="viewController">
+                <viewController title="JoinVC" id="xF0-qp-wz5" customClass="JoinViewController" customModule="Assassins" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="641-ci-IF5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,16 +251,26 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="f0x-4q-ybs" kind="presentation" modalPresentationStyle="fullScreen" id="MMu-2d-LG5"/>
+                                            <action selector="joinOnPress:" destination="xF0-qp-wz5" eventType="touchUpInside" id="wok-WN-WNh"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6X-T3-dS3">
+                                        <rect key="frame" x="35.5" y="106" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="l4H-f1-qn1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="n6X-T3-dS3" firstAttribute="top" secondItem="mbC-M0-R74" secondAttribute="top" constant="106" id="4sD-h3-wIv"/>
                                     <constraint firstItem="HOZ-R6-k8m" firstAttribute="centerX" secondItem="Tah-1p-Ylz" secondAttribute="centerX" id="Az4-og-X6U"/>
                                     <constraint firstAttribute="bottom" secondItem="HOZ-R6-k8m" secondAttribute="bottom" constant="170" id="Ksk-u3-8oi"/>
                                     <constraint firstItem="mbC-M0-R74" firstAttribute="bottom" secondItem="HOZ-R6-k8m" secondAttribute="bottom" constant="170" id="Rj8-3L-d6c"/>
                                     <constraint firstItem="HOZ-R6-k8m" firstAttribute="top" secondItem="5yg-I8-0dy" secondAttribute="bottom" constant="73" id="S13-2m-SHm"/>
                                     <constraint firstAttribute="trailing" secondItem="HOZ-R6-k8m" secondAttribute="trailing" id="fFJ-LR-QQ3"/>
+                                    <constraint firstItem="n6X-T3-dS3" firstAttribute="centerX" secondItem="5yg-I8-0dy" secondAttribute="centerX" id="qzB-KO-8Rc"/>
                                     <constraint firstItem="mbC-M0-R74" firstAttribute="trailing" secondItem="5yg-I8-0dy" secondAttribute="trailing" constant="28.546624170368318" id="sou-G1-CrA"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="ZGn-q3-O3a"/>
@@ -263,6 +289,10 @@
                         <viewLayoutGuide key="safeArea" id="dws-0N-iQ0"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dag-hT-I9f"/>
+                    <connections>
+                        <outlet property="gameIDTextField" destination="5yg-I8-0dy" id="BD7-mN-g5s"/>
+                        <outlet property="usernameTextField" destination="n6X-T3-dS3" id="P80-6w-xwa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heJ-C3-Fm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,7 +312,4 @@
         <image name="king" width="500" height="500"/>
         <image name="pawn" width="500" height="500"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="6nS-mH-80h"/>
-    </inferredMetricsTieBreakers>
 </document>

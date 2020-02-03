@@ -16,6 +16,9 @@
 		EB2F2FB623E57654008F2015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2F2FB523E57654008F2015 /* Assets.xcassets */; };
 		EB2F2FB923E57654008F2015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2F2FB723E57654008F2015 /* LaunchScreen.storyboard */; };
 		EB4CED5323E6852D003DDF9A /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CED5223E6852D003DDF9A /* FirebaseAuthManager.swift */; };
+		EB5E904623E6AAE90087F6CF /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E904523E6AAE80087F6CF /* CreateViewController.swift */; };
+		EB5E904823E6AD5A0087F6CF /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E904723E6AD5A0087F6CF /* JoinViewController.swift */; };
+		EB5E904A23E6BC310087F6CF /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E904923E6BC310087F6CF /* LobbyViewController.swift */; };
 		EB7E595F23E578C600A4D235 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7E595E23E578C600A4D235 /* GoogleService-Info.plist */; };
 		EB8CF06523E6220F00992A21 /* CreateJoinGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06423E6220F00992A21 /* CreateJoinGame.storyboard */; };
 		EB8CF06723E622DE00992A21 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8CF06623E622DE00992A21 /* Auth.storyboard */; };
@@ -38,6 +41,9 @@
 		EB2F2FB823E57654008F2015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2F2FBA23E57654008F2015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB4CED5223E6852D003DDF9A /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		EB5E904523E6AAE80087F6CF /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		EB5E904723E6AD5A0087F6CF /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		EB5E904923E6BC310087F6CF /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		EB7E595E23E578C600A4D235 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB8CF06423E6220F00992A21 /* CreateJoinGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateJoinGame.storyboard; sourceTree = "<group>"; };
 		EB8CF06623E622DE00992A21 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 				D46D113423E6260100C9EADB /* LoginViewController.swift */,
 				EB8CF07323E6522E00992A21 /* RegisterViewController.swift */,
 				EB913AB623E69C8C009610DD /* CreateJoinViewController.swift */,
+				EB5E904523E6AAE80087F6CF /* CreateViewController.swift */,
+				EB5E904723E6AD5A0087F6CF /* JoinViewController.swift */,
+				EB5E904923E6BC310087F6CF /* LobbyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,9 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5E904623E6AAE90087F6CF /* CreateViewController.swift in Sources */,
+				EB5E904A23E6BC310087F6CF /* LobbyViewController.swift in Sources */,
 				EB4CED5323E6852D003DDF9A /* FirebaseAuthManager.swift in Sources */,
 				D46D113523E6260100C9EADB /* LoginViewController.swift in Sources */,
 				EB8CF07423E6522E00992A21 /* RegisterViewController.swift in Sources */,
+				EB5E904823E6AD5A0087F6CF /* JoinViewController.swift in Sources */,
 				EB913AB723E69C8C009610DD /* CreateJoinViewController.swift in Sources */,
 				EB2F2FB123E57652008F2015 /* MainViewController.swift in Sources */,
 				EB2F2FAD23E57652008F2015 /* AppDelegate.swift in Sources */,
